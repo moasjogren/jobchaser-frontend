@@ -15,8 +15,6 @@ import DarkModeWrapper from "@/_components/DarkModeWrapper";
 import { Provider } from "react-redux";
 import store from "@/lib/store";
 
-import "@radix-ui/themes/styles.css";
-
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <Provider store={store}>
