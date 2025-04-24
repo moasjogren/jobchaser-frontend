@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../_context/ThemeContext";
+import { ThemeContext } from "../../context/ThemeContext";
 
 const DarkModeWrapper = ({ children }: { children: React.ReactNode }) => {
   const { darkMode } = useContext(ThemeContext);

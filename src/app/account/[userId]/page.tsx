@@ -4,9 +4,9 @@ import Cookies from "js-cookie";
 import { useContext, useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 
-import ProfileCard from "@/_components/ProfileCard";
-import { AuthContext, User } from "@/_context/AuthContext";
-import { SavedJobs } from "@/_components/FavJobs";
+import ProfileCard from "@/components/features/ProfileCard";
+import { AuthContext, User } from "@/context/AuthContext";
+import { SavedJobs } from "@/components/features/FavJobs";
 
 function Account() {
   const params = useParams();

@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 
-import Nav from "./Nav";
-import ThemeToggle from "./ThemeToggle";
+import Nav from "../ui/Nav";
+import ThemeToggle from "../ui/ThemeToggle";
 
 export default function Header() {
   return (

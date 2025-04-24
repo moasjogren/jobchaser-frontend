@@ -4,12 +4,12 @@
 import "./globals.css";
 
 // Kontext & komponenter
-import { ThemeProvider } from "@/_context/ThemeContext";
-import { AuthProvider } from "@/_context/AuthContext";
+import { ThemeProvider } from "@/context/ThemeContext";
+import { AuthProvider } from "@/context/AuthContext";
 
-import Header from "@/_components/Header";
-import Footer from "@/_components/Footer";
-import DarkModeWrapper from "@/_components/DarkModeWrapper";
+import Header from "@/components/shared/Header";
+import Footer from "@/components/shared/Footer";
+import DarkModeWrapper from "@/components/features/DarkModeWrapper";
 
 // Redux-importer
 import { Provider } from "react-redux";

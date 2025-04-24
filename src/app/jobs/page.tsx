@@ -1,6 +1,6 @@
 "use client";
 
-import { JobList } from "@/_components/Joblist";
+import { JobList } from "@/components/features/Joblist";
 import { useAppDispatch, useAppSelector } from "@/lib/store";
 import { setSearchQuery, setCategory } from "@/lib/jobSearchSlice";
 

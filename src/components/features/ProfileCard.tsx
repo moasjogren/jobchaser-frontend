@@ -2,7 +2,7 @@ import Cookies from "js-cookie";
 import { useState, useContext } from "react";
 import { useParams, useRouter } from "next/navigation";
 
-import { User, AuthContext } from "../_context/AuthContext";
+import { User, AuthContext } from "../../context/AuthContext";
 
 interface ProfileCardProps {
   user: User;
