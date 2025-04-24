@@ -1,7 +1,8 @@
 "use client";
+
+import Cookies from "js-cookie";
 import { createContext, useState, useEffect, ReactNode } from "react";
 import { useRouter } from "next/navigation";
-import Cookies from "js-cookie";
 
 export interface User {
   id: string;

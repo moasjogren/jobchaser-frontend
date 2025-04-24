@@ -41,7 +41,7 @@ export const SavedJobs = () => {
       }
     };
     fetchsavedJobs();
-  }, [userId, router]);
+  }, [userId]);
 
   return (
     <div className="saved-jobs-container">

@@ -1,10 +1,12 @@
 "use client";
+
+import Cookies from "js-cookie";
 import { useContext, useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { AuthContext, User } from "@/app/_context/AuthContext";
-import { SavedJobs } from "@/app/_components/FavJobs";
-import ProfileCard from "@/app/_components/ProfileCard";
-import Cookies from "js-cookie";
+
+import ProfileCard from "@/_components/ProfileCard";
+import { AuthContext, User } from "@/_context/AuthContext";
+import { SavedJobs } from "@/_components/FavJobs";
 
 function Account() {
   const params = useParams();

@@ -1,8 +1,8 @@
-import { useState, useContext } from "react";
-import { User, AuthContext } from "../_context/AuthContext";
-import { useParams, useRouter } from "next/navigation";
-import Image from "next/image";
 import Cookies from "js-cookie";
+import { useState, useContext } from "react";
+import { useParams, useRouter } from "next/navigation";
+
+import { User, AuthContext } from "../_context/AuthContext";
 
 interface ProfileCardProps {
   user: User;
@@ -99,7 +99,11 @@ const ProfileCard: React.FC<ProfileCardProps> = ({ user, fetchAccount }) => {
       {!showSettings ? (
         <div className="profile-aside-top">
           <div className="profile-info">
-            <Image src="/profile-default.png" alt="profile-picture" width="80" height="80" />
+            <img
+              src="https://static-00.iconduck.com/assets.00/profile-default-icon-2048x2045-u3j7s5nj.png"
+              alt="profile-picture"
+              style={{ width: "80px", height: "80px" }}
+            />
             <div className="profile-aside-text">
               <h4>
                 {user.firstName} {user.lastName}

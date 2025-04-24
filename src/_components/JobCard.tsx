@@ -1,9 +1,11 @@
 "use client";
+
+import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+
 import { FaBookmark, FaRegBookmark } from "react-icons/fa6";
 import { IconContext } from "react-icons";
-import Cookies from "js-cookie";
-import { useRouter } from "next/navigation";
 
 export interface Job {
   id: number;
@@ -68,7 +70,7 @@ function JobCard({
       }
     };
     checkIfSaved();
-  }, [id, router]);
+  }, [id]);
 
   const handleSaveJob = async () => {
     const token = Cookies.get("token");

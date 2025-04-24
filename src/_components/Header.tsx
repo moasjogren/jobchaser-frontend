@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+
 import Nav from "./Nav";
 import ThemeToggle from "./ThemeToggle";
 

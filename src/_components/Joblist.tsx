@@ -1,9 +1,11 @@
 "use client";
+
+import Cookies from "js-cookie";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+
 import JobCard, { Job } from "./JobCard";
 import Result from "./Results";
-import Cookies from "js-cookie";
-import { useRouter } from "next/navigation";
 
 interface JobListProps {
   filter?: string;
@@ -46,7 +48,7 @@ export const JobList = ({ filter, category, savedJobIds, showResult }: JobListPr
     };
 
     fetchJobs();
-  }, [router]);
+  }, []);
 
   useEffect(() => {
     if (!jobData) {

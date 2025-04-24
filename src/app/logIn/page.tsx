@@ -1,9 +1,11 @@
 "use client";
+
+import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { useContext, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AuthContext } from "../_context/AuthContext";
-import Link from "next/link";
+
+import { AuthContext } from "@/_context/AuthContext";
 
 type Input = {
   email: string;

@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
+
 import jobSearchReducer from "./jobSearchSlice";
 
 const store = configureStore({
@@ -8,7 +9,7 @@ const store = configureStore({
   },
 });
 
-// TS-typer
+// TS-types
 export type Rootstate = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
